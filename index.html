@@ -49,6 +49,74 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="uvdiffusion_stop()" onmouseover="uvdiffusion_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='uvdiffusion'><img src='images/uvdiffusion.gif', width="160", height="140"></div>
+          <img src='images/uvdiffusion.gif', width="160", height="140">
+        </div>
+        <script type="text/javascript">
+          function uvdiffusion_start() {
+            document.getElementById('').style.opacity = "1";
+          }
+
+          function uvdiffusion_stop() {
+            document.getElementById('hybridnerf').style.opacity = "0";
+          }
+          uvdiffusion_stop()
+        </script>
+      </td>
+      <td width="75%" valign="top">
+        <br>
+        <a href="">
+          <papertitle>Taming Texture Generation on 3D Meshes with Point-UV Diffusion</papertitle>
+        </a>
+        <br>
+        <a href="">Xin Yu</a>, <strong>Peng Dai</strong>, <a href="">Wenbo Li</a>, <a href="">Lan Ma</a>, <a href="">Xiaojuan Qi</a>
+        <br>
+        International Conference on Computer Vision, <em>ICCV 2023</em> 
+        <br>
+        <a href="">paper</a> / <a href="">project page</a> / <a href="">code</a>
+      </td>
+    </tr>
+
+    <tr onmouseout="occsdf_stop()" onmouseover="occsdf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='occsdf'><img src='images/occsdf.png', width="160", height="150"></div>
+          <img src='images/occsdf.png', width="160", height="150">
+        </div>
+        <script type="text/javascript">
+          function occsdf_start() {
+            document.getElementById('').style.opacity = "1";
+          }
+
+          function occsdf_stop() {
+            document.getElementById('occsdf').style.opacity = "0";
+          }
+          occsdf_stop()
+        </script>
+      </td>
+      <td width="75%" valign="top">
+        <br>
+        <a href="https://arxiv.org/abs/2303.09152">
+          <papertitle>Learning a Room with the Occ-SDF Hybrid: Signed Distance Function Mingled with Occupancy Aids Scene Representation</papertitle>
+        </a>
+        <br>
+        <a href="https://scholar.google.com/citations?user=SF7bq48AAAAJ&hl=zh-CN">Xiaoyang Lyu</a>,
+        <strong>Peng Dai</strong>,  
+        <a href="https://kyleleey.github.io/">Zizhang Li</a>,
+        <a href="">Dongyu Yan</a>,
+        <a href="">Yi Lin</a>,
+        <a href="https://scholar.google.com/citations?user=UMveGGwAAAAJ&hl=en">Yifan Peng</a>,
+        <a href="https://scholar.google.com/citations?user=bGn0uacAAAAJ&hl=zh-CN">Xiaojuan Qi</a>
+        <br>
+        International Conference on Computer Vision, <em>ICCV 2023</em>
+        <br>
+        <a href="https://arxiv.org/abs/2303.09152">paper</a> / <a href="">project page</a> / <a href="">code</a>
+      </td>
+    </tr>
+
     <tr onmouseout="hybridnerf_stop()" onmouseover="hybridnerf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -280,43 +348,6 @@
       </td>
     </tr>
 
-
-    <tr onmouseout="occsdf_stop()" onmouseover="occsdf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='occsdf'><img src='images/occsdf.png', width="160", height="150"></div>
-          <img src='images/occsdf.png', width="160", height="150">
-        </div>
-        <script type="text/javascript">
-          function occsdf_start() {
-            document.getElementById('').style.opacity = "1";
-          }
-
-          function occsdf_stop() {
-            document.getElementById('occsdf').style.opacity = "0";
-          }
-          occsdf_stop()
-        </script>
-      </td>
-      <td width="75%" valign="top">
-        <br>
-        <a href="https://arxiv.org/abs/2303.09152">
-          <papertitle>Learning a Room with the Occ-SDF Hybrid: Signed Distance Function Mingled with Occupancy Aids Scene Representation</papertitle>
-        </a>
-        <br>
-        <a href="https://scholar.google.com/citations?user=SF7bq48AAAAJ&hl=zh-CN">Xiaoyang Lyu</a>
-        <strong>Peng Dai</strong>,  
-        <a href="https://kyleleey.github.io/">Zizhang Li</a>,
-        <a href="">Dongyu Yan</a>,
-        <a href="">Yi Lin</a>,
-        <a href="https://scholar.google.com/citations?user=UMveGGwAAAAJ&hl=en">Yifan Peng</a>,
-        <a href="https://scholar.google.com/citations?user=bGn0uacAAAAJ&hl=zh-CN">Xiaojuan Qi</a>
-        <br>
-        <em>Arxiv preprint, 2023</em> 
-        <br>
-        <a href="https://arxiv.org/abs/2303.09152">paper</a>
-      </td>
-    </tr>
 
     <tr onmouseout="isspp_stop()" onmouseover="isspp_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
